@@ -1,31 +1,37 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true,
-    "jest": true
-  },
-  "extends": [
-    "react-app",
-    "react-app/jest",
-    "plugin:react/jsx-runtime",
-    "airbnb",
-    "airbnb-typescript",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module",
-    "project": "./tsconfig.json"
-  },
-  "plugins": ["@typescript-eslint", "react", "prettier"],
-  "rules": {
-    "indent": ["error", "tab"],
-    "linebreak-style": ["error", "windows"],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "react/react-in-jsx-scope": ["off"],
-    "react/jsx-props-no-spreading": ["warn"]
-  }
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"jest": true
+	},
+	"extends": [
+		"react-app",
+		"react-app/jest",
+		"plugin:react/jsx-runtime",
+		"airbnb",
+		"airbnb-typescript",
+		"plugin:import/typescript",
+		"plugin:prettier/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+	"plugins": ["@typescript-eslint", "react", "prettier"],
+	"rules": {
+		"indent": ["error", "tab"],
+		"linebreak-style": ["error", "windows"],
+		"quotes": ["error", "single"],
+		"semi": ["error", "always"],
+		"react/react-in-jsx-scope": ["off"],
+		"react/jsx-props-no-spreading": ["warn"],
+		"no-restricted-imports": [
+			"error",
+			{
+				"patterns": ["@/features/*/*"]
+			}
+		]
+	}
 }
