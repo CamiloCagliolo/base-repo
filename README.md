@@ -24,3 +24,4 @@ In order to copy it, click + on top right corner of the screen and select import
 - [Axios](https://www.npmjs.com/package/axios), for data fetching: `npm install axios`
 - [React Router DOM](https://reactrouter.com/en/main), for client routing: `npm install react-router-dom`
 - [React Hook Form](https://react-hook-form.com), an excellent form management library: `npm install react-hook-form`
+- [i18next](https://www.i18next.com/overview/getting-started), for implementing standard translations: `npm install i18next --save`
